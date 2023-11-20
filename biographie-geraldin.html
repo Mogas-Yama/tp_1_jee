@@ -40,10 +40,14 @@
 <body class="services-details-page" data-bs-spy="scroll" data-bs-target="#navmenu">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header sticky-top d-flex align-items-center">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div
+      class="container-fluid d-flex align-items-center justify-content-between"
+    >
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center me-auto me-xl-0"
+      >
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Append</h1>
@@ -53,39 +57,63 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- Accueil -->
+          <li><a href="index.html#hero">Accueil</a></li>
+          <!-- Actualités -->
+          <li><a href="actualites.html">Actualités</a></li>
+
+          <!-- Biographie dropdown -->
+
+          <li class="dropdown has-dropdown">
+            <a href="#"
+              ><span class="active">Biographie</span> <i class="bi bi-chevron-down"></i
+            ></a>
             <ul class="dd-box-shadow">
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-                <ul class="dd-box-shadow">
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="biographie-jonathan.html">BAKOTE Jonathan</a></li>
+              <li><a href="biographie-geraldin.html">KABA Arnaud</a></li>
             </ul>
           </li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <!-- fin -->
+
+          <!-- Parcours dropdown -->
+
+          <li class="dropdown has-dropdown">
+            <a href="#"
+              ><span>Parcours</span> <i class="bi bi-chevron-down"></i
+            ></a>
+            <ul class="dd-box-shadow">
+              <li><a href="parcours-scolaire.html">Parours scolaire</a></li>
+              <li><a href="parcours-académique.html">Parcours académique</a></li>
+            </ul>
+          </li>
+          <!-- fin -->
+          <!-- Projets dropdown -->
+
+          <li class="dropdown has-dropdown">
+            <a href="#"
+              ><span>Projets</span> <i class="bi bi-chevron-down"></i
+            ></a>
+            <ul class="dd-box-shadow">
+              <li><a href="projets-realises.html">Projets réalisés</a></li>
+              <li><a href="projets-en-cours.html">Projets en cours</a></li>
+              <li><a href="projets-futurs.html">Projets futurs</a></li>
+            </ul>
+          </li>
+          <!-- fin -->
+          <!-- Galerie -->
+          <li><a href="index.html#portfolio">Galerie</a></li>
+          <!-- Contact -->
+          <li><a href="index.html#team">Contact</a></li>
         </ul>
-
+        <!-- Menu burger -->
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav><!-- End Nav Menu -->
-
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
-
+      </nav>
+      <!-- End Nav Menu -->
+      <!-- Faire un don -->
+      <a class="btn-getstarted" href="index.html#contact">Don</a>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main id="main">
 
@@ -177,14 +205,17 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span>Append</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>
+            Découvrez notre site personnel, une vitrine numérique où on
+            partage mos passions, projets et réflexions. Bienvenue dans notre
+            univers en ligne !"
+          </p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -194,29 +225,31 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Menu</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html#hero">Acceuil</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="index.html#portfolio">Galerie</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Notre savoir faire</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Developpement Mobile</a></li>
+            <li><a href="#">Developpement Web</a></li>
+            <li><a href="#">Developpement Desktop</a></li>
+            <li><a href="#">Administration SqlServer</a></li>
+            <li><a href="#">Administration Linux</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
+        <div
+          class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+        >
+          <h4>Nous Contacter</h4>
           <p>A108 Adam Street</p>
           <p>New York, NY 535022</p>
           <p>United States</p>
